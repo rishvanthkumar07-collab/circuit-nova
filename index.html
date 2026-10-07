@@ -1,19 +1,244 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Electric Circuit Nova</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Circuit Nova</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+        }
+
+        header {
+            background: #111a33;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0b1020, #152b55);
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #00d9ff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #00d9ff;
+            color: #06101c;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #151f38;
+            padding: 30px;
+            width: 280px;
+            border-radius: 15px;
+            border: 1px solid #26385f;
+        }
+
+        .card h3 {
+            color: #00d9ff;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #070b16;
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Electric Circuit Nova</h1>
+    <header>
+        <div class="logo">⚡ Circuit Nova</div>
 
-    <h2>Welcome to Electric Circuit Nova</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#circuits">Circuits</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
 
-    <p>
-        Explore electric circuits, electronics projects,
-        components and innovative electrical ideas.
-    </p>
+
+    <section class="hero" id="home">
+        <h1>Welcome to <span>Circuit Nova</span></h1>
+
+        <p>
+            Explore circuits, electronics, innovative projects,
+            and new ideas in the world of technology.
+        </p>
+
+        <a href="#circuits" class="button">Explore Now</a>
+    </section>
+
+
+    <section class="section" id="circuits">
+        <h2>Explore Circuits</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🔋 Basic Circuits</h3>
+                <p>
+                    Learn about voltage, current, resistance,
+                    batteries, and simple electrical circuits.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Electronics</h3>
+                <p>
+                    Discover electronic components such as
+                    LEDs, resistors, sensors, and microcontrollers.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Smart Projects</h3>
+                <p>
+                    Explore innovative Arduino, robotics,
+                    automation, and IoT projects.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Arduino Projects</h3>
+                <p>
+                    Learn and build useful projects using Arduino
+                    and different sensors.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Robotics</h3>
+                <p>
+                    Explore robots, motors, obstacle detection,
+                    and automation systems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Innovation</h3>
+                <p>
+                    Turn creative ideas into real electronic
+                    and technology projects.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="section" id="about">
+        <h2>About Circuit Nova</h2>
+
+        <p>
+            Circuit Nova is a platform for learning circuits,
+            electronics, technology, and innovative projects.
+        </p>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Circuit Nova. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
